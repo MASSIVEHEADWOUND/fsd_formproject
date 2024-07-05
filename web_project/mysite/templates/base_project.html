@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            {% block title %}
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        <nav style="background-color: rgb(185, 181, 181);">
+            <ul style="list-style-type: none; display: flex; padding: 20px;">
+                <li><a href="/addproject" style="text-decoration: none;color: #333; padding: 20px;">Add Project</a></li>
+                <li><a href="/editprojects" style="text-decoration: none;color: #333; padding: 20px;">Edit Projects</a></li>
+                <li><a href="/viewprojects" style="text-decoration: none;color: #333; padding: 20px;">View Projects</a></li>
+            </ul>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
